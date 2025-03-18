@@ -1,0 +1,31 @@
+# ~/.config/starship.toml
+
+format = """$directory$git_branch$character"""
+
+[hostname]
+ssh_only = true
+style = "bold dimmed"
+
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+disabled = false
+
+[git_branch]
+symbol = " " 
+style = "bold #fab387"
+
+[git_status]
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+style = "dimmed"
+
+[nodejs]
+symbol = " "
+style = "bold"
+
+[package]
+symbol = "📦 "
+style = "bold"
